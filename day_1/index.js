@@ -1,0 +1,1 @@
+console.log(require('fs').readFileSync(__dirname + '/input.txt').toString().split('\r\n').map((line) => parseInt(line.split('   ')[0])).sort((a, b) => a-b).map((v) => require('fs').readFileSync(__dirname + '/input.txt').toString().split('\r\n').map((line) => parseInt(line.split('   ')[1])).sort((a, b) => a-b).filter((x) => x == v).length * v).reduce((x, y) => x + y))
