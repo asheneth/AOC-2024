@@ -8,21 +8,9 @@ let input = FS.readFileSync(__dirname + '/input.txt').toString()
             .map((v) => parseInt(v))
     })
 
-
-// let key = input[0];
-// input = input.slice(1);
-
 let flag = null
 
 //LOGIC
-// input.forEach((l, i) => {
-//     // if(i % 2 != 0) return;
-
-//     if(Array.isArray(l)) l.forEach((p, j) => {
-//         // if(i % 2 != 0) return;
-//     })
-// })
-
 flag = input.filter((l, i) => {
     let op = [0, null, l[0]]
     l.forEach((v, i) => {

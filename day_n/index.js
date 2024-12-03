@@ -5,6 +5,7 @@ let input = FS.readFileSync(__dirname + '/input.txt').toString()
     .map((line) => {
         return line
             // .split(' ')
+            // .map((v) => parseInt(v))
     })
 
 
@@ -14,13 +15,15 @@ let input = FS.readFileSync(__dirname + '/input.txt').toString()
 let flag = null
 
 //LOGIC
-input.forEach((l, i) => {
+for(let i = 0; i < input.length; i++){
     // if(i % 2 != 0) return;
 
-    l.forEach((p, j) => {
-        // if(i % 2 != 0) return;
-    })
-})
+    let l = input[i]
+
+    for(let j = 0; j < l.length; j++){
+        // if(j % 2 != 0) return;
+    }
+}
 
 
 console.log(flag)
