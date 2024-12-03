@@ -15,8 +15,10 @@ let flag = null
 
 //LOGIC
 input.forEach((l, i) => {
-    l.forEach((p, j) => {
+    // if(i % 2 != 0) return;
 
+    l.forEach((p, j) => {
+        // if(i % 2 != 0) return;
     })
 })
 
