@@ -12,7 +12,7 @@ let input = FS.readFileSync(__dirname + '/input.txt').toString()
 // let key = input[0];
 // input = input.slice(1);
 
-let flag = null
+let flag = 0
 
 //LOGIC
 for(let i = 0; i < input.length; i++){
