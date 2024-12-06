@@ -1,29 +1,30 @@
 let FS = require('fs');
 
-let input = FS.readFileSync(__dirname + '/input.txt').toString()
-    .split('\r\n')
-    .map((line) => {
-        return line
-            // .split(' ')
-            // .map((v) => parseInt(v))
+let ps = FS.readFileSync(__dirname + '/input.txt').toString()
+    .split('\r\n\r\n')
+    .map((b) => {
+        return b.split('\r\n').map((l) => {
+            return l
+                // .split(' ')
+                // .map((v) => parseInt(v))
+        })
     })
 
 
 // let key = input[0];
 // input = input.slice(1);
 
+let pl = ps[ps.length - 1]
+let p1 = ps[0]
+// let p2 = ps[1]
+
 let flag = 0
 
 //LOGIC
-for(let i = 0; i < input.length; i++){
-    // if(i % 2 != 0) return;
-
-    let l = input[i]
-
-    for(let j = 0; j < l.length; j++){
-        // if(j % 2 != 0) return;
-    }
-}
-
+flag = pl.map((l) => {
+    return l
+}).reduce((x, y) => {
+    return x + y
+})
 
 console.log(flag)
