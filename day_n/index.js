@@ -21,6 +21,13 @@ let p1 = ps[0]
 let flag = 0
 
 //LOGIC
+for(let y = 0; y < pl.length; y++){
+    let l = pl[y]
+    for(let x = 0; x < l.length; x++){
+        let c = l[x]
+    }
+}
+
 flag = pl.map((l) => {
     return l
 }).reduce((x, y) => {
