@@ -34,4 +34,8 @@ flag = pl.map((l) => {
     return x + y
 })
 
+// pl.forEach((l) => {
+//     console.log(l.join(''))
+// })
+
 console.log(flag)
